@@ -6,7 +6,7 @@ public class AtmOperationImpl implements AtmOperationInterf{
 	Map<Double,String> ministmt=new HashMap<>();
 
 	@Override
-	public void transfer() {
+	public void TransactionHistory() {
 		// TODO Auto-generated method stub
 		System.out.println("Available Balance is : "+ atm.getBalance());
 		
@@ -42,7 +42,7 @@ public class AtmOperationImpl implements AtmOperationInterf{
 	}
 
 	@Override
-	public void TransactionHistory() {
+	public void transfer() {
 		// TODO Auto-generated method stub
 		for(Map.Entry<Double,String>m:ministmt.entrySet()) {
 			System.out.println(m.getKey()+""+m.getValue());
